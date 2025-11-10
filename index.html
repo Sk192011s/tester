@@ -15,6 +15,33 @@
   <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/custom-style.css">    
 
   <title>LuGyi</title> 
+
+  <style>
+    /* Responsive font-size for VIP title */
+    .vip-title {
+      font-size: 1.4rem; /* smaller for mobile */
+      line-height: 1.4;
+      user-select: none; /* disable text selection */
+    }
+
+    /* VIP link styling */
+    .vip-link {
+      color: #165a93;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    /* Disable image save / copy */
+    .no-copy {
+      -webkit-user-drag: none;
+      user-drag: none;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  </style>
 </head> 
 <body>   
   <div class="page_wrapper">          
@@ -99,7 +126,7 @@
     <section class="row_am features_section" id="features">
       <div class="container">
         <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-          <h2 style="font-size: 1.6rem;">VIP Keyထည့်သွင်းခြင်းဖြင့် All Movie ကြည့်နိုင်ပါပြီ</h2>
+          <h2 class="vip-title">VIP Keyထည့်သွင်းခြင်းဖြင့် All Movie ကြည့်နိုင်ပါပြီ</h2>
         </div>
         <div class="feature_detail">
           <div class="left_data feature_box">
@@ -107,13 +134,14 @@
               <div class="icon"></div>
               <div class="text">
                 <p class="mb-0">
-                  VIP Key ဝယ်လိုပါက <a href="https://t.me/iqowoq" target="_blank" style="color:#165a93; font-weight:bold; text-decoration:underline;">ယခုစာကိုနှိပ်ပါ</a>
+                  VIP Key ဝယ်လိုပါက 
+                  <a href="https://t.me/iqowoq" target="_blank" class="vip-link">ယခုစာကိုနှိပ်ပါ</a>
                 </p>
               </div>
             </div>
           </div>
           <div class="feature_img" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-            <img src="https://thumbsnap.com/i/hMDoaHqj.jpg?1110" alt="Password Image">
+            <img src="https://thumbsnap.com/i/u2oAhL1J.jpg?1110" alt="Password Image" class="no-copy">
           </div>
         </div>
       </div>
