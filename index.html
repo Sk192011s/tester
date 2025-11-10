@@ -6,40 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/icofont.min.css">
-  <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/owl.carousel.min.css">
   <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/aos.css">
   <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/style.css">
-  <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/responsive.css">
-  <link rel="stylesheet" href="https://azuki990.github.io/download/templates/css/custom-style.css">
-
   <title>LuGyi</title>
+  <style>
+    /* Custom adjustments for cleaner look */
+    body { font-family: 'Arial', sans-serif; background: #f5f5f5; }
+    header { background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .navbar-brand img { height: 50px; width: auto; }
+    .nav-link { font-weight: 500; margin: 0 10px; transition: color 0.3s; }
+    .nav-link:hover { color: #165a93; }
+    .banner_section { padding: 100px 0; background: linear-gradient(135deg,#165a93,#2980b9); color: #fff; }
+    .banner_text h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; }
+    .banner_text p { font-size: 1.1rem; margin-top: 15px; }
+    .android-apk-direct-download img { border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+    .features_section { padding: 80px 0; background: #fff; }
+    .features_section h2 { font-size: 2rem; margin-bottom: 40px; color: #165a93; text-align: center; }
+    .feature_box .text p { font-size: 1.05rem; margin: 0; }
+    footer { background: #165a93; color: #fff; padding: 20px 0; }
+    footer a { color: #ffd700; text-decoration: none; font-weight: bold; }
+    .owl-carousel .item img { border-radius: 12px; }
+  </style>
 </head>
 <body>
   <div class="page_wrapper">
-    
-    <!-- Preloader -->
-    <div id="preloader">
-      <div id="loader"></div>
-    </div>
-
     <!-- Header -->
     <header>
       <div class="container">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand" href="/">
-            <img src="templates/Picsart_25-11-10_19-17-59-330.png" alt="Dark Plus Logo">
+            <img src="templates/new-logo.png" alt="LuGyi Logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
-              <div class="toggle-wrap">
-                <span class="toggle-bar"></span>
-              </div>
+              <div class="toggle-wrap"><span class="toggle-bar"></span></div>
             </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
@@ -54,64 +58,39 @@
     <!-- Banner Section -->
     <section class="banner_section">
       <div class="container">
-        <div class="anim_line">
-          <!-- 9 anim lines -->
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-          <span><img src="templates/frontend/images/anim_line.png" alt="line"></span>
-        </div>
-
-        <div class="row">
-          <!-- Banner text -->
+        <div class="row align-items-center">
           <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1500">
             <div class="banner_text">
-              <h1>LuGyi Application<br><span style="font-size: 25px; color: #165a93;">21+ Movie and Yoteshin</span></h1>
+              <h1>LuGyi Application<br><span style="font-size: 25px;">21+ Movie and Yoteshin</span></h1>
               <p>Download ခလုပ်လေးကို နှိပ်ပြီး LuGyi App ကို ရယူလိုက်ပါ။</p>
             </div>
-            <div class="flex" style="margin-top: 50px;">
-              <a class="justify-between" href="https://lugyicar-apk.deno.dev/https://www.mediafire.com/file_premium/2ak2k3cg1nn0v7e/LuGyi_Apk_1.6.apk/file">
+            <div class="flex mt-4">
+              <a href="https://lugyicar-apk.deno.dev/https://www.mediafire.com/file_premium/2ak2k3cg1nn0v7e/LuGyi_Apk_1.6.apk/file">
                 <img class="android-apk-direct-download" src="https://thumbsnap.com/i/QRryqpXf.jpg?1110" alt="Download LuGyi APK">
               </a>
             </div>
           </div>
-
-          <!-- Banner slider -->
           <div class="col-lg-6 col-md-12" data-aos="fade-in" data-aos-duration="1500">
-            <div class="banner_slider">
-              <div id="frmae_slider" class="owl-carousel owl-theme">
-                <div class="item"><div class="slider_img"><img src="https://thumbsnap.com/i/KapCWCTJ.jpg?1110" alt="Slide 1"></div></div>
-                <div class="item"><div class="slider_img"><img src="https://thumbsnap.com/i/Kx5pQX8W.jpg?1110" alt="Slide 2"></div></div>
-                <div class="item"><div class="slider_img"><img src="https://thumbsnap.com/i/SpP2Vcjk.jpg?1110" alt="Slide 3"></div></div>
-              </div>
+            <div class="banner_slider owl-carousel owl-theme">
+              <div class="item"><img src="https://thumbsnap.com/i/KapCWCTJ.jpg?1110" alt="Slide 1"></div>
+              <div class="item"><img src="https://thumbsnap.com/i/Kx5pQX8W.jpg?1110" alt="Slide 2"></div>
+              <div class="item"><img src="https://thumbsnap.com/i/SpP2Vcjk.jpg?1110" alt="Slide 3"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Password Section -->
-    <section class="row_am features_section" id="features">
+    <!-- Features / Password Section -->
+    <section class="features_section" id="features">
       <div class="container">
-        <div class="section_title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-          <h2>VIP Keyထည့်သွင်းခြင်းဖြင့် All Movieကြည့်နိူင်ပါပြီ</h2>
-        </div>
-        <div class="feature_detail">
-          <div class="left_data feature_box">
-            <div class="data_block" data-aos="fade-right" data-aos-duration="1500">
-              <div class="icon"></div>
-              <div class="text">
-                <p class="mb-0">VIP Keyဝယ်လိုပါက Telegram @iqowoq</p>
-              </div>
-            </div>
+        <h2>VIP Keyထည့်သွင်းခြင်းဖြင့် All Movie ကြည့်နိုင်ပါပြီ</h2>
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-6">
+            <p>VIP Key ဝယ်လိုပါက Telegram @iqowoq</p>
           </div>
-          <div class="feature_img" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-            <img src="https://thumbsnap.com/i/u2oAhL1J.jpg?1110" alt="Password Image">
+          <div class="col-lg-6">
+            <img src="https://thumbsnap.com/i/u2oAhL1J.jpg?1110" alt="Password Image" class="img-fluid rounded">
           </div>
         </div>
       </div>
@@ -119,30 +98,14 @@
 
     <!-- Footer -->
     <footer>
-      <div class="bottom_footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p style="color: black;">© Copyrights 2025. All rights reserved.</p>
-            </div>
-            <div class="col-md-6">
-              <p class="developer_text" style="color: black;">
-                Developed by 
-                <a href="https://t.me/iqowoq" target="_blank" style="color: black; font-weight: bold; text-decoration: none;">
-                  LuGyi
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+      <div class="container text-center">
+        <p>© Copyrights 2025. All rights reserved.</p>
+        <p>Developed by <a href="https://t.me/iqowoq" target="_blank">LuGyi</a></p>
       </div>
     </footer>
-
-    <div class="purple_backdrop"></div>
   </div>
 
   <!-- Scripts -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="https://azuki990.github.io/download/templates/js/jquery.js"></script>
   <script src="https://azuki990.github.io/download/templates/js/owl.carousel.min.js"></script>
   <script src="https://azuki990.github.io/download/templates/js/bootstrap.min.js"></script>
